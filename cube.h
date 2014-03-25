@@ -28,7 +28,7 @@ class Cube {
         bool rotateFaceHelper(SIDE face, float angle);
 
     public:
-        
+
         Cube(int num_turns = 0);
         void init(int turns);
         void reset();
@@ -42,7 +42,7 @@ class Cube {
         bool saveCube();
         bool loadCube(string fname);
         bool checkComplete();
-        
+
 };
 
 #endif

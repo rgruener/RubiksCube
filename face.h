@@ -9,9 +9,9 @@
 #include "piece.h"
 
 class Face {
-    
+
     private:
-        
+
         SIDE side;
 
     public:

@@ -158,7 +158,7 @@ bool Cube::saveCube(){
     cout << "Please Specify file name for cube save: ";
     cin >> fname;
     outfile.open(fname.c_str(), ios::out | ios::binary);
-    
+
     if (outfile.is_open()){
         for (list<CubeMove>::iterator it=moves.begin(); it != moves.end(); ++it){
             outfile << (*it).face << (*it).dir;

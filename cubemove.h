@@ -8,7 +8,7 @@
 #include "piece.h"
 
 class CubeMove {
-    
+
     public:
 
         SIDE face;

@@ -7,8 +7,7 @@ out vec4 color;
 uniform mat4 model_view;
 uniform mat4 face_rotations;
 
-void main() 
-{
+void main(){
     color = vColor;
     gl_Position = model_view * face_rotations * vPosition;
-} 
+}

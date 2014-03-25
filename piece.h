@@ -45,9 +45,9 @@ const color4 side_colors_rgb[8] = {
 };
 
 class Piece {
-    
+
     private:
-    
+
         SIDE_COLOR piece_side_colors[6];
         point4 position;
         point4 points[Num_Vertices];

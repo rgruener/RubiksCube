@@ -10,13 +10,13 @@ int piece_point_index = 0;
 void Piece::quad(point4 a, point4 b, point4 c, point4 d, SIDE side){
     colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]];
     points[piece_point_index++] = a;
-    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]]; 
+    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]];
     points[piece_point_index++] = b;
-    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]]; 
+    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]];
     points[piece_point_index++] = c;
-    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]]; 
+    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]];
     points[piece_point_index++] = a;
-    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]]; 
+    colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]];
     points[piece_point_index++] = c;
     colors[piece_point_index] = side_colors_rgb[piece_side_colors[side]];
     points[piece_point_index++] = d;
@@ -41,7 +41,7 @@ void Piece::reset(point4 pos){
     float factor = .25; // size factor
     float gap = 0.2; // gap factor independent of size factor
     gap*=factor;
-    
+
     // determine cube points, based on fact cube positions for x,y,z will be -1,0,or 1
     point4 front_top_left = pos*factor + point4(-.66*factor+gap, .66*factor-gap, -.66*factor+gap, 1-factor);
     point4 front_top_right = pos*factor + point4(.66*factor-gap, .66*factor-gap, -.66*factor+gap, 1-factor);
